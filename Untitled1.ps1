@@ -31,5 +31,5 @@ Get-Content $metadatapath\temp.txt | out-file $metadatapath\programmetadata.txt
 cd $metadatapath
 git add .
 git commit -m "updating programmetadata.txt"
-git push origin main
+git push
 }
