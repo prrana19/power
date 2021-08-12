@@ -3,8 +3,8 @@
 cd $workspace
 rm temp.txt
 
-for ($i=0; $i -lt $arrayRepos.Count; $i++) {
-    cd $workspace
+#for ($i=0; $i -lt $arrayRepos.Count; $i++) {
+ #   cd $workspace
 #    cd $arrayRepos[$i]
 #   $file= dir
 #  $file.name | Where-object {$_ -like "*.cs"}| foreach{$_ -replace'.cs'} | out-file -Append $workspace\filenamelist.txt
@@ -12,4 +12,4 @@ for ($i=0; $i -lt $arrayRepos.Count; $i++) {
 
   git ls-files | Where-object {$_ -like "*.cs"}| foreach{",Oh/Odjfs/Sets/$_".replace('/','.')} | foreach{$_ -replace '.cs'} | foreach{$_.Split(".")[-1]+$_} | out-file $workspace\GitFilesUpdate\temp.txt
 
-}
+#}
