@@ -33,4 +33,3 @@ git add .
 git commit -m "updating programmetadata.txt"
 git push origin main
 }
-rm $metadatapath\temp.txt
