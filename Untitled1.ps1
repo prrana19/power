@@ -28,5 +28,9 @@ Write-Output "Programmetadata.txt is up to date"
 }
 else{
 Get-Content $metadatapath\temp.txt | out-file $metadatapath\programmetadata.txt
+cd $metadatapath
+git add .
+git commit -m "updating programmetadata.txt"
+git push origin master
 }
 rm $metadatapath\temp.txt
